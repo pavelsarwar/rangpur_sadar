@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>আমার গোপালপুর</title>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.min.css"/>
+		<script src="jquery/jquery-1.11.2.min.js"></script>
+		<script src="jquery/jquery.mobile-1.4.5.min.js"></script>
+		<script src="cordova.js"></script>
+		<script type="text/javascript" charset="utf-8">
+
+    // Call onDeviceReady when Cordova is loaded.
+    //
+    // At this point, the document has loaded but cordova-2.0.0.js has not.
+    // When Cordova is loaded and talking with the native device,
+    // it will call the event `deviceready`.
+    //
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    // Cordova is loaded and it is now safe to call Cordova methods
+    //
+    function onDeviceReady() {
+        // Register the event listener
+        document.addEventListener("backbutton", onBackKeyDown, false);
+    }
+
+    // Handle the back button
+    //
+    function onBackKeyDown() {
+		navigator.app.exitApp();
+    }
+
+    </script>
+	</head>
+	<body onload="onLoad()">
+	
+		<div data-role="page" data-theme="b">
+			<div data-role="header" data-tap-toggle="false" data-position="fixed" 
+			style="text-align:center;">
+			<a href="index.html" class="ui-btn ui-icon-grid ui-btn-icon-left ui-btn-icon-notext">Home</a>
+				<img style="margin-top:15px;" src="img/header.png"/>
+			<a href="about.html" class="ui-btn ui-icon-info ui-btn-icon-left ui-btn-icon-notext">Information</a>	
+			</div>
+			
+			<div data-role="main" class="ui-content" style="text-align:center;">
+				<div class="ui-bar ui-bar-b">
+					<h1>ইউনিয়ন পরিষদ</h1>
+				</div>
+		
+				
+				<div class="ui-corner-all custom-corners">
+					<div class="ui-bar ui-bar-a">
+						<h3>চেয়ারম্যান</h3>
+				  	</div>
+				  	<div class="ui-body ui-body-a">
+					<p style=text-align:center;><img style="max-width: 100%;" src="img/Picture31.jpg"/><br><strong>মো: হামিদুল হক চৌধুরী  </strong> <br>ইউনিয়ন: আলমনগর<br><a href="Tel:+8801725942808" class="ui-link-inherit">মোবাইল : ০১৭২৫৯৪২৮০৮</a></p>
+					<p style=text-align:center;><img style="max-width: 100%;" src="img/Picture32.jpg"/><br><strong>মো: সিরাজুল ইসলাম</strong> <br>ইউনিয়ন: ধোপাকান্দি<br><a href="Tel:+8801714117776" class="ui-link-inherit">মোবাইল : ০১৭১৪১১৭৭৭৬</a></p>	
+				 	<p style=text-align:center;><img style="max-width: 100%;" src="img/Picture33.jpg"/><br><strong>মো: হাফিজুর রহমান</strong> <br>ইউনিয়ন: হেমনগর<br><a href="Tel:+8801716799061" class="ui-link-inherit">মোবাইল : ০১৭১৬৭৯৯০৬১</a></p>
+					<p style=text-align:center;><img style="max-width: 100%;" src="img/Picture34.jpg"/><br><strong>মো: হালিমুজ্জামান তালুকদার</strong> <br>ইউনিয়ন: মির্জাপুর<br><a href="Tel:+8801712725367" class="ui-link-inherit">মোবাইল : ০১৭১২৭২৫৩৬৭</a></p>
+					<p style=text-align:center;><img style="max-width: 100%;" src="img/Picture35.jpg"/><br><strong>মো: খায়রুল ইসলাম</strong> <br>ইউনিয়ন: ঝাওয়াইল<br><a href="Tel:+8801711908375" class="ui-link-inherit">মোবাইল : ০১৭১১৯০৮৩৭৫</a></p>
+					<p style=text-align:center;><img style="max-width: 100%;" src="img/Picture36.jpg"/><br><strong>এম, হোসেন আলী</strong> <br>ইউনিয়ন: নগদাশিমলা<br><a href="Tel:+8801191282422" class="ui-link-inherit">মোবাইল : ০১১৯১২৮২৪২২</a></p>
+					<p style=text-align:center;><img style="max-width: 100%;" src="img/Picture37.jpg"/><br><strong>মো: আব্বাছ আলী</strong> <br>ইউনিয়ন: হাদিরা<br><a href="Tel:+8801728353532" class="ui-link-inherit">মোবাইল : ০১৭২৮৩৫৩৫৩২</a></p>
+
+					</div>
+				</div>
+			
+				
+				
+			</div>
+			<div data-role="footer" data-tap-toggle="true" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-top" rel="external"></a></li> 
+						 <li><a onclick="window.history.back()" href="#" data-icon="back"></a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

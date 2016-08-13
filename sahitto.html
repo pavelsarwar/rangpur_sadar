@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>আমার গোপালপুর</title>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.min.css"/>
+		<link href="jquery/app.css" rel="stylesheet" type="text/css">
+		<script src="jquery/jquery-1.11.2.min.js"></script>
+		<script src="jquery/jquery.mobile-1.4.5.min.js"></script>
+		<script src="cordova.js"></script>
+		<script type="text/javascript" charset="utf-8">
+
+    // Call onDeviceReady when Cordova is loaded.
+    //
+    // At this point, the document has loaded but cordova-2.0.0.js has not.
+    // When Cordova is loaded and talking with the native device,
+    // it will call the event `deviceready`.
+    //
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    // Cordova is loaded and it is now safe to call Cordova methods
+    //
+    function onDeviceReady() {
+        // Register the event listener
+        document.addEventListener("backbutton", onBackKeyDown, false);
+    }
+
+    // Handle the back button
+    //
+    function onBackKeyDown() {
+		navigator.app.exitApp();
+    }
+
+    </script>
+	</head>
+	<body onload="onLoad()">
+	
+		<div data-role="page" data-theme="b">
+			<div data-role="header" data-tap-toggle="false" data-position="fixed" 
+			style="text-align:center;">
+			<a href="index.html" class="ui-btn ui-icon-grid ui-btn-icon-left ui-btn-icon-notext">Home</a>
+				<img style="margin-top:8px;" src="img/header.png"/>
+			<a href="about.html" class="ui-btn ui-icon-info ui-btn-icon-left ui-btn-icon-notext">Information</a>	
+			</div>
+			
+			<div data-role="main" class="ui-content">
+				<div class="ui-bar ui-bar-b" style="text-align:center;">
+					<h1>সাহিত্য</h1>
+				</div>
+				<div class="ui-corner-all custom-corners">
+				  	<div class="ui-body ui-body-a">
+						<p style=text-align:justify;>
+						
+গোপালপুরের ভু-খন্ডে মসলিম ঐতিহ্য এবং হিন্দু সম্প্রদায়ের ঐতিহ্য রয়েছে । মুসলিম ঐতিহ্যের মধ্যে খামার পাড়ার মসজিদ ও মাজার এবং হিন্দু সম্প্রদায়ের ঐতিহ্যের মধ্যে আনন্দ মঠ । <br><br>
+
+হেমচন্দ্র চৌধুরী সুবর্ণখালী থেকে তিন কিলো পূর্ব-দক্ষিনে শিমলাপাড়া মৌজায় ১৮৯০ সালে নতুন একটি দ্বিতল রাজপ্রাসাদ নির্মান  করেন । তার নাম পরী দালান ।রাজ বাড়ীকে কেন্দ্র করে দক্ষিন প্রান্তে গড়ে উঠে বিশাল বাজার । <br><br>
+
+কালক্রমে হেমচন্দ্রের নামানুসারে নাম হয় হেমনগর । তিনি ১৯০০ সালে হেমনগরে বিমাতার নামে বিশ একর জমির উপর প্রতিষ্ঠা করেন হেমনগর শশীমুখী উচ্চ বিদ্যালয় ।<br><br>
+
+আনন্দ মোহন কলেজ প্রতিষ্ঠায় শিলালিপিতে দশ জন দাতার তালিকায় চতুর্থ স্থানে রয়েছে তার নাম । হেমচন্দ্র চৌধুরী ১৯২০ সালে কাশিতে মারা যান ।<br><br>
+
+হেমনগরের জমিদার হেমচন্দ্র হিতৈষীনামক সাহিত্য পত্রিকা, বৈরান, গোপালপুর বার্তা২৪.কম, মাসিক আঁচড় নামের সাহিত্য পত্রিকা নিয়মিত বের হচ্ছে ।
+						
+						</p>
+				 	</div>
+				</div>
+
+			
+				
+				
+			</div>
+			<div data-role="footer" data-tap-toggle="true" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-top" rel="external"></a></li> 
+						 <li><a onclick="window.history.back()" href="#" data-icon="back"></a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

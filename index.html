@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>রঙে ভরা রংপুর সদর</title>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.min.css"/>
+		<script src="jquery/jquery-1.11.2.min.js"></script>
+		<script src="jquery/jquery.mobile-1.4.5.min.js"></script>
+		<script src="cordova.js"></script>
+		<script type="text/javascript" charset="utf-8">
+
+    // Call onDeviceReady when Cordova is loaded.
+    //
+    // At this point, the document has loaded but cordova-2.0.0.js has not.
+    // When Cordova is loaded and talking with the native device,
+    // it will call the event `deviceready`.
+    //
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    // Cordova is loaded and it is now safe to call Cordova methods
+    //
+    function onDeviceReady() {
+        // Register the event listener
+        document.addEventListener("backbutton", onBackKeyDown, false);
+    }
+
+    // Handle the back button
+    //
+    function onBackKeyDown() {
+		navigator.app.exitApp();
+    }
+
+    </script>
+	</head>
+	<body onload="onLoad()">
+		<div data-role="page" data-theme="b">
+			<div data-role="header" style="text-align:center;" data-tap-toggle="false"
+			 data-position="fixed">
+				<img style="margin-top:10px; max-width: 100%;" src="img/header.png"/>
+			</div>
+			<div data-role="main" class="ui-content">
+				<a href="eknojore.html" class="ui-btn ui-mini">উপজেলা পরিচিতি</a>
+				<a href="history.html" class="ui-btn ui-mini">ইতিহাস-ঐতিহ্য</a>
+			
+				<a href="upozilaprosason.html" class="ui-btn ui-mini">উপজেলা প্রশাসন</a>
+				<a href="jonoprotinidhi.html" class="ui-btn ui-mini">জনপ্রতিনিধি</a>
+				<a href="govoff1.html" class="ui-btn ui-mini">সরকারি অফিস</a>
+				<a href="protisthan.html" class="ui-btn ui-mini">প্রতিষ্ঠান</a>
+				<a href="travel.html" class="ui-btn ui-mini">দর্শনীয় স্থান</a>
+				<a href="help.html" class="ui-btn ui-mini">জরুরি সেবা</a>
+				
+				<a href="about.html" class="ui-btn ui-mini">এ্যাপ সম্পর্কে</a>
+			</div>
+			<div data-role="footer" style="text-align:center;" data-tap-toggle="false" data-position="fixed">
+				
+		<img style="margin-top:10px; max-width: 100%;" src="img/footer.png"/>
+	
+			</div>
+		</div>
+	</body>
+</html>

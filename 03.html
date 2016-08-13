@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>রঙে ভরা রংপুর সদর</title>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.min.css"/>
+		<script src="jquery/jquery-1.11.2.min.js"></script>
+		<script src="jquery/jquery.mobile-1.4.5.min.js"></script>
+		<script src="cordova.js"></script>
+		<script type="text/javascript" charset="utf-8">
+
+    // Call onDeviceReady when Cordova is loaded.
+    //
+    // At this point, the document has loaded but cordova-2.0.0.js has not.
+    // When Cordova is loaded and talking with the native device,
+    // it will call the event `deviceready`.
+    //
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    // Cordova is loaded and it is now safe to call Cordova methods
+    //
+    function onDeviceReady() {
+        // Register the event listener
+        document.addEventListener("backbutton", onBackKeyDown, false);
+    }
+
+    // Handle the back button
+    //
+    function onBackKeyDown() {
+		navigator.app.exitApp();
+    }
+
+    </script>
+	</head>
+	<body onload="onLoad()">
+	
+		<div data-role="page" data-theme="b">
+			<div data-role="header" data-tap-toggle="false" data-position="fixed" 
+			style="text-align:center;">
+			<a href="index.html" class="ui-btn ui-icon-grid ui-btn-icon-left ui-btn-icon-notext">Home</a>
+				<img style="margin-top:15px;" src="img/header.png"/>
+			<a href="about.html" class="ui-btn ui-icon-info ui-btn-icon-left ui-btn-icon-notext">Information</a>	
+			</div>
+				<div data-role="main" class="ui-content">
+				<div class="ui-bar ui-bar-b" style="text-align:center;">
+					<h1>সমন্বিত দৃষ্টি প্রতিবন্ধী শিক্ষা কার্যক্রম</h1>
+				</div>
+				<div class="ui-corner-all custom-corners">
+				
+				  	<div class="ui-body ui-body-a">
+						<p style=text-align:center;> <img style="max-width: 100%;" src="img/4.jpg"/></p>
+						
+						<p style=text-align:center;>ইউনিয়ন পরিষদ থেকে রিক্সা, মোটর সাইকেল ভ্যান, অটো, কার মাইক্রোবাসে যাওয়া যায়। যেতে ১৫/২০ মিনিট লাগে। 
+
+						</p>
+						
+				 	</div>
+				</div>
+				<div class="ui-bar ui-bar-b" style="text-align:center;">
+					<h1>প্রাচীন বট গাছ</h1>
+				</div>
+				<div class="ui-corner-all custom-corners">
+				
+				  	<div class="ui-body ui-body-a">
+						<p style=text-align:center;> <img style="max-width: 100%;" src="img/15.jpg"/></p>
+						
+						<p style=text-align:center;> 
+ইউনিয়ন পরিষদ থেকে রিক্সা, মোটর সাইকেল ভ্যান, অটো, কার মাইক্রোবাসে যাওয়া যায়। যেতে ১৫/২০ মিনিট লাগে। </p>
+						
+				 	</div>
+				</div>
+				
+				<div class="ui-bar ui-bar-b" style="text-align:center;">
+					<h1>ঘাঘট নদী</h1>
+				</div>
+				<div class="ui-corner-all custom-corners">
+				
+				  	<div class="ui-body ui-body-a">
+						
+						
+						<p style=text-align:center;> 
+
+চন্দনপাট ইউনিয়ন থেকে শহরে যাওয়া রাস্তায় সুলতান মোড় নামক এলাকা গেলে পাওয়া যায় এই নদীর দেখা।
+
+রংপুরের মিঠাপুকুর ও সদর উপজেলার ২ সীমানার ওপর দিয়ে প্রবাহিত ঘাঘট নদী। আয়তনের দিক থেকে নদী তেমন প্রশস্ত ও গভীরতা না থাকলেও ভাঙন উল্লেখযোগ্য হারে বাড়ছে। স্রোতের গতিতে তেমন মনে হয় না এ নদীর ভাঙন এমনটা হবে। কর্তৃপক্ষের উদাসীনতার কারণে অবৈধভাবে বালু উত্তোলনের ফলে নদীর গতি পরিবর্তন হয়ে একদিকে কৃষকের চাষাবাদীয় হাজার হাজার বিঘা জমি নদীগর্ভে বিলিন হয়ে যাচ্ছে। পাশাপাশি বাড়ছে ভাঙনে ঘরবাড়ি বিলিনের হার। সরেজমিন গিয়ে দেখা যায়, সদরের ধর্মদাস লক্ষণপাড়া, মগলেবার, ইসলামপুর, খোর্দ্দমুরাদপুর, ভাংনী, কাগজি পাড়া, দরজি পাড়া, ঠাকুরবাড়ি, চানপুর, দলশিংপুর, বেনীপুর, ত্রিমহনীফতেপুরসহ বিভিন্ন স্থানে নদীর ভাঙনের ফলে ঘরবাড়ি বিলিন হয়ে যাচ্ছে। সেই সঙ্গে গৃহহারা হয়ে পড়েছে অনেক পরিবার। </p>
+						
+				 	</div>
+				</div>
+				
+			</div>
+			<div data-role="footer" data-tap-toggle="false" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-top"
+						 rel="external"></a></li>
+						<li><a onclick="window.history.back()" href="#" data-icon="back"></a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

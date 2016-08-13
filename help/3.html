@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>গর্বের কালিহাতি</title>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="../jquery/jquery.mobile-1.4.5.min.css"/>
+		<script src="../jquery/jquery-1.11.2.min.js"></script>
+		<script src="../jquery/jquery.mobile-1.4.5.min.js"></script>
+		<script src="../cordova.js"></script>
+		<script type="text/javascript" charset="utf-8">
+
+    // Call onDeviceReady when Cordova is loaded.
+    //
+    // At this point, the document has loaded but cordova-2.0.0.js has not.
+    // When Cordova is loaded and talking with the native device,
+    // it will call the event `deviceready`.
+    //
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    // Cordova is loaded and it is now safe to call Cordova methods
+    //
+    function onDeviceReady() {
+        // Register the event listener
+        document.addEventListener("backbutton", onBackKeyDown, false);
+    }
+
+    // Handle the back button
+    //
+    function onBackKeyDown() {
+		navigator.app.exitApp();
+    }
+
+    </script>
+	</head>
+	<body onload="onLoad()">
+	
+		<div data-role="page" data-theme="b">
+			<div data-role="header" data-tap-toggle="false" data-position="fixed" 
+			style="text-align:center;">
+			<a href="index.html" class="ui-btn ui-icon-grid ui-btn-icon-left ui-btn-icon-notext">Home</a>
+				<img style="margin-top:15px;" src="../img/header.png"/>
+			<a href="about.html" class="ui-btn ui-icon-info ui-btn-icon-left ui-btn-icon-notext">Information</a>	
+			</div>
+			
+			<div data-role="main" class="ui-content" style="text-align:center;">
+				<div class="ui-bar ui-bar-b">
+					<h1>ইউনিয়ন ভূমি সম্পর্কিত</h1>
+				</div>
+		
+
+
+				
+				
+				<div class="ui-corner-all custom-corners">
+					
+				  	<div class="ui-body ui-body-a">
+					<p style=text-align:center;>
+					
+
+
+<strong>এলেঙ্গা পৌর ভূমি অফিস</strong><br>	মো:এনায়েত করিম খান<br>পদবীঃ 	ইউএলএও<br>মোবাইলঃ	০১৯৬২-৮২৩১৮৭<br><br>
+<strong>বল্লা	</strong><br>মোঃ মুক্তার আলী মন্ডল	<br>পদবীঃ 	<br>মোবাইলঃ ইউএলএও	০১৭২০-২১৮৭৫৭<br><br>
+<strong>নারান্দিয়া	</strong><br>মোঃ আসাদুল হক<br>পদবীঃ 		ইউএলএও<br>মোবাইলঃ	০১৭১৫-৬৬৪১৬২<br><br>
+<strong>বাংড়া</strong><br>	মোঃ আসাদুজ্জামান	<br>পদবীঃ 	ইউএলএও<br>মোবাইলঃ	০১৭৩৫-৯০৬৭৩৯<br><br>
+<strong>কালিহাত পৌর ভূমি অফিস</strong><br>	মো: আনোয়ার হোসেন	<br>পদবীঃ 	ইউএলএসএও<br>মোবাইলঃ	০১৭২৪-০১২২০৫<br><br>
+<strong>দূর্গাপুর	</strong><br>মোঃ মাসুদুল ইসলাম তাং<br>পদবীঃ 		ইউএলএসএও<br>মোবাইলঃ	০১৭৩৩-১০৫২৮৯<br><br>
+<strong>সল্লা ইউনিয়ন ভূমি অফিস	</strong><br>মোঃ আব্দুছ ছাত্তার<br>পদবীঃ 		ইউএলএসএও<br>মোবাইলঃ	০১৭১৮-৮৮৫৮২৪<br><br>
+<strong>পাইকড়া	</strong><br>আশুতোষ মন্ডল	<br>পদবীঃ 	ইউএলএসএও<br>মোবাইলঃ	০১৭১৫-৩৪০৩৭৬<br><br>
+<strong>কোকডহরা</strong><br>	মোঃ কামরুজ্জমান	<br>পদবীঃ 	ইউএলএসএও<br>মোবাইলঃ	০১৯২২-৬৯৮৬৪৫<br><br>
+<strong>বীরবাসিন্দা</strong><br>	শিরিন আক্তার	<br>পদবীঃ 	ইউএলএসএও<br>মোবাইলঃ	০১৭১৮-৪১৩৫২১<br><br>
+<strong>সহদেবপুর</strong><br>	মোঃ মনিরুজ্জামান<br>পদবীঃ 	ইউএলএসএও	<br>মোবাইলঃ০১৭১২-২১৮৩৬০<br><br>
+<strong>নাগবাড়ী ইউনিয়ন ভূমি অফিস	</strong><br>মো: নজরুল ইসলাম	<br>পদবীঃ 	ইউএলএসএও	<br>মোবাইলঃ০১৭১৮-৯১৬৯২২
+
+
+
+
+					</p>
+					
+					</div>
+				</div>
+
+			</div>
+			<div data-role="footer" data-tap-toggle="true" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="../index.html" class="ui-btn ui-icon-home ui-btn-icon-top" rel="external"></a></li> 
+						 <li><a onclick="window.history.back()" href="#" data-icon="back"></a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
