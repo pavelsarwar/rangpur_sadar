@@ -22,7 +22,7 @@
 
       
 	  
-	  
+	  <platform name="android" />
 	
 	<icon src="res/mipmap-mdpi/ic_launcher.png" gap:platform="android" gap:qualifier="mdpi" />
 	<icon src="res/mipmap-hdpi/ic_launcher.png" gap:platform="android" gap:qualifier="hdpi" />
