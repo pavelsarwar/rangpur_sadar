@@ -3,14 +3,14 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.rangpur.sadar"
-		versionCode = "33"
-        version   = "1.0.0">
+        id        = "com.jamalpur.sadar"
+        versionCode = "33" 
+		version   = "1.0.0">
 
     <name>জামালপুর সদর</name>
 
     <description>
-		জামালপুর সদর বাংলাদেশের জামালপুর জেলার অন্তর্গত একটি উপজেলা।
+		জামালপুর সদর
 
 
     </description>
@@ -20,38 +20,21 @@
     </author>
 	
 
-
-      
-	  
-	  <platform name="android" />
 	
 	<icon src="res/mipmap-mdpi/ic_launcher.png" gap:platform="android" gap:qualifier="mdpi" />
 	<icon src="res/mipmap-hdpi/ic_launcher.png" gap:platform="android" gap:qualifier="hdpi" />
 	<icon src="res/mipmap-xhdpi/ic_launcher.png" gap:platform="android" gap:qualifier="xhdpi" />
 	<icon src="res/mipmap-xxhdpi/ic_launcher.png" gap:platform="android" gap:qualifier="xxhdpi" />
-	<icon src="res/mipmap-xxxhdpi/ic_launcher.png" gap:platform="android" gap:qualifier="xxxhdpi" />
+	
 
-
-
-
-    
     <preference name="permissions"                value="none"/>
 	
 	<gap:splash gap:density="ldpi" gap:platform="android" src="res/screen/android/screen-ldpi-portrait.png" />
 	<gap:splash gap:density="mdpi" gap:platform="android" src="res/screen/android/screen-mdpi-portrait.png" />
 	<gap:splash gap:density="hdpi" gap:platform="android" src="res/screen/android/screen-hdpi-portrait.png" />
 	<gap:splash gap:density="xhdpi" gap:platform="android" src="res/screen/android/screen-xhdpi-portrait.png" />
-	<gap:splash gap:density="xxhdpi" gap:platform="android" src="res/screen/android/screen-xxhdpi-portrait.png" />
-	<gap:splash gap:density="xxxhdpi" gap:platform="android" src="res/screen/android/screen-xxhdpi-portrait.png" />
 	
 	
-	
-
-
-
-
-
-
     <!-- Customize your app and platform with the preference element. -->
 	<preference name="permissions" value="none"/>
     <preference name="phonegap-version"           value="cli-6.3.0" />          <!-- all: current version of PhoneGap -->
